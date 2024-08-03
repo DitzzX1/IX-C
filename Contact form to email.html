@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/Contact form to email.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h2>Mungkin ada masukan??</br>#Belum bisa di gunakan</h2>
+		<form onsubmit="emailSend(); reset(); return false;">
+			<input type="text" id="name" placeholder="Nama" name="name" required>
+			<input type="text" id="phone" placeholder="No HP" name="phone" required>
+			<input type="email" id="email" placeholder="Gmail" name="email" required>
+			<button type="submit" class="btn">Kirim</button>
+		</form>
+	</div> 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+	<script src="js/Contact form to email.js"></script>
+</body>
+</html>
